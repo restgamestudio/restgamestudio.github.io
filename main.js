@@ -66,7 +66,8 @@ const revealObserver = new IntersectionObserver(entries => {
 reveals.forEach(r => revealObserver.observe(r));
 
 /* ---- Language Toggle ---- */
-let currentLang = 'en';
+const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+let currentLang = browserLang.startsWith('tr') ? 'tr' : 'en';
 
 function setLang(lang) {
   currentLang = lang;
@@ -116,3 +117,6 @@ if (contactForm) {
     window.location.href = `mailto:restgamestudio@gmail.com?subject=${subject}&body=${body}`;
   });
 }
+
+/* ---- Auto-detect browser language on load ---- */
+setLang(currentLang);
