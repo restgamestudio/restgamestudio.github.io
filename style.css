@@ -605,6 +605,8 @@ section + section { border-top: 1px solid var(--border); }
 .store-btn:hover { border-color: var(--white-dim); color: var(--white); }
 .store-btn.steam { border-color: rgba(102,192,244,.4); color: #66c0f4; }
 .store-btn.steam:hover { border-color: #66c0f4; color: var(--white); background: rgba(102,192,244,.1); }
+.store-btn.appstore { border-color: rgba(0, 113, 227, .4); color: #0071e3; }
+.store-btn.appstore:hover { border-color: #0071e3; color: var(--white); background: rgba(0, 113, 227, .1); }
 .store-btn.playstore { border-color: rgba(78,201,129,.4); color: #4ec981; }
 .store-btn.playstore:hover { border-color: #4ec981; color: var(--white); background: rgba(78,201,129,.1); }
 .store-btn.disabled {
